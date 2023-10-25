@@ -16,18 +16,28 @@
     <header>
       <nav>
         <div id="switch-theme">
-          <img class="sun" src="./CSS/icon/sun.png"></img>
-          <img class="moon" src="./CSS/icon/moon.png"></img>
+          <img class="sun" src="./CSS/icon/sun.png" alt="icon of a sun" />
+          <img class="moon" src="./CSS/icon/moon.png" alt="icon of a moon" />
         </div>
         <div id="colors-and-works">
-          <p id="p1">Colors</p>
+          <p id="colors">Colors</p>
+          <div id="colors-selector">
+            <p id="red"></p>
+            <p id="orange"></p>
+            <p id="yellow"></p>
+            <p id="green"></p>
+            <p id="blue"></p>
+            <p id="purple"></p>
+            <p id="pink"></p>
+          </div>
           <p id="p2">how it works ?</p>
           <p id="p3">Start Breathing</p>
         </div>
       </nav>
     </header>
     <main>
-      <section id="start-breathing">
+      <!-- Start Breathing section -->
+      <div id="start-breathing">
         <h1 id="titel1">Take 3min for yourself</h1>
         <h2 id="titel2">and Breathe...</h2>
         <div id="all-circle">
@@ -36,14 +46,28 @@
           </div>
           <div id="circle2"></div>
         </div>
+      </div>
+      <!-- How it Works section -->
+      <div id="how-it-works">
         <div>
-      </section>
-      <section id="how-it-works">
-        <div>
-          <p>TEXT</p>
+          <h1 id="hw-title">How it Works ?</h1>
+          <p id="hw-p1">
+            It's very simple, the circle in the center of the screen grows for 4
+            seconds. As he grows, take a deep breath, calmly and deeply through
+            your nose
+          </p>
+          <p id="hw-p2">
+            Then it shrinks for 6 seconds. This is the time to release the
+            pressure by exhaling calmly through your mouth. Feel the muscles in
+            your body relax with each exhale.
+          </p>
+          <p id="hw-p3">
+            repeated the exercise for 3min and recovered a calm and serene mind.
+          </p>
+          <p id="hw-p4">This technique is ideal for calming down quickly.</p>
         </div>
-      </section>
+      </div>
     </main>
+    <script src="./JS/colorsTheme.js" type="module"></script>
   </body>
-  <script src="./JS/colorsTheme.js"></script>
 </html>

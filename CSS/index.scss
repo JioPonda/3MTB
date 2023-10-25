@@ -12,6 +12,7 @@
         margin: 15px 0 0 1vw;
         height: auto;
         width: 1.5vw;
+        user-select: none;
       }
       .sun:hover {
         cursor: pointer;
@@ -22,6 +23,7 @@
         margin: 15px 0 0 1vw;
         height: auto;
         width: 1.5vw;
+        user-select: none;
       }
       .moon:hover {
         cursor: pointer;
@@ -33,12 +35,92 @@
       text-align: end;
       color: $text-black;
       margin-left: 80vw;
-      #p1 {
+      user-select: none;
+      #colors {
         display: block;
         font-size: 1.5em;
+        list-style: none;
       }
-      #p1:hover {
+      #colors:hover {
         cursor: pointer;
+      }
+      #colors-selector {
+        display: none;
+        position: absolute;
+        margin-top: 55px;
+        margin-left: -10.3vw;
+        background-color: $text-white;
+        border-radius: 50px;
+        #red {
+          height: 1.5vw;
+          width: 1.5vw;
+          background-color: $red-circle1;
+          border-radius: 100px;
+          margin: 1vw;
+        }
+        #red:hover {
+          cursor: pointer;
+        }
+        #orange {
+          height: 1.5vw;
+          width: 1.5vw;
+          background-color: $orange-circle1;
+          border-radius: 100px;
+          margin: 1vw;
+        }
+        #orange:hover {
+          cursor: pointer;
+        }
+        #yellow {
+          height: 1.5vw;
+          width: 1.5vw;
+          background-color: $yellow-circle1;
+          border-radius: 100px;
+          margin: 1vw;
+        }
+        #yellow:hover {
+          cursor: pointer;
+        }
+        #green {
+          height: 1.5vw;
+          width: 1.5vw;
+          background-color: $green-circle1;
+          border-radius: 100px;
+          margin: 1vw;
+        }
+        #green:hover {
+          cursor: pointer;
+        }
+        #blue {
+          height: 1.5vw;
+          width: 1.5vw;
+          background-color: $blue-circle1;
+          border-radius: 100px;
+          margin: 1vw;
+        }
+        #blue:hover {
+          cursor: pointer;
+        }
+        #purple {
+          height: 1.5vw;
+          width: 1.5vw;
+          background-color: $purple-circle1;
+          border-radius: 100px;
+          margin: 1vw;
+        }
+        #purple:hover {
+          cursor: pointer;
+        }
+        #pink {
+          height: 1.5vw;
+          width: 1.5vw;
+          background-color: $pink-circle1;
+          border-radius: 100px;
+          margin: 1vw;
+        }
+        #pink:hover {
+          cursor: pointer;
+        }
       }
       #p2 {
         display: block;
@@ -69,10 +151,12 @@
       color: $text-black;
       overflow: hidden;
       h1 {
+        font-weight: 100;
         font-size: 5em;
       }
 
       h2 {
+        font-weight: 100;
         font-size: 5em;
       }
       #all-circle {
@@ -85,7 +169,7 @@
           background-color: $blue-circle2;
           #start-button {
             display: block;
-            color: $blue-circle1;
+            color: $text-black;
             position: absolute;
             font-size: 2.5em;
             background-color: $blue-circle2;
