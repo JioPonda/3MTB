@@ -19,6 +19,11 @@ import {
   startButton,
   p2,
   p3,
+  hwTitle,
+  hwP1,
+  hwP2,
+  hwP3,
+  hwP4,
 } from "./baseSelector.js";
 
 import {
@@ -48,30 +53,6 @@ import {
   textBlack,
 } from "./colors.js";
 
-// Dark Theme
-
-moon.addEventListener("click", function () {
-  page.style.backgroundColor = "black";
-  titel1.style.color = textWhite;
-  titel2.style.color = textWhite;
-  colors.style.color = textWhite;
-  p2.style.color = textWhite;
-  p3.style.color = textWhite;
-  moon.style.display = "none";
-  sun.style.display = "block";
-});
-
-sun.addEventListener("click", function () {
-  page.style.backgroundColor = "#58afd8";
-  titel1.style.color = textBlack;
-  titel2.style.color = textBlack;
-  colors.style.color = textBlack;
-  p2.style.color = textBlack;
-  p3.style.color = textBlack;
-  moon.style.display = "block";
-  sun.style.display = "none";
-});
-
 // Color Selection
 
 colors.addEventListener("click", function () {
@@ -82,12 +63,11 @@ colors.addEventListener("click", function () {
   }
 });
 
-document.addEventListener("click", function (e) {
-  if (!colors.contains(e.target) && !colorsSelector.contains(e.target)) {
-    colorsSelector.style.display = "none";
-    console.log("les couleurs disparaisent");
-  }
-});
+// document.addEventListener("click", function (e) {
+//   if (!colors.contains(e.target) && !colorsSelector.contains(e.target)) {
+//     colorsSelector.style.display = "none";
+//   }
+// });
 
 // Color Change
 
@@ -107,65 +87,108 @@ function changeColor(
 
 red.addEventListener("click", function () {
   localStorage.setItem("selectedColor", "red");
-  changeColor(redBgc, redCircle1, redCircle2, textBlack, redCircle1);
+  if (page.style.backgroundColor == "black") {
+    changeColor("black", redCircle1, redCircle2, textBlack, redCircle1);
+  } else {
+    changeColor(redBgc, redCircle1, redCircle2, textBlack, redCircle1);
+  }
 });
 
 orange.addEventListener("click", function () {
   localStorage.setItem("selectedColor", "orange");
-  changeColor(
-    orangeBgc,
-    orangeCircle1,
-    orangeCircle2,
-    textBlack,
-    orangeCircle1
-  );
+  if (page.style.backgroundColor == "black") {
+    changeColor(
+      "black",
+      orangeCircle1,
+      orangeCircle2,
+      textBlack,
+      orangeCircle1
+    );
+  } else {
+    changeColor(
+      orangeBgc,
+      orangeCircle1,
+      orangeCircle2,
+      textBlack,
+      orangeCircle1
+    );
+  }
 });
 
 yellow.addEventListener("click", function () {
   localStorage.setItem("selectedColor", "yellow");
-  changeColor(
-    yellowBgc,
-    yellowCircle1,
-    yellowCircle2,
-    textBlack,
-    yellowCircle1
-  );
+  if (page.style.backgroundColor == "black") {
+    changeColor(
+      "black",
+      yellowCircle1,
+      yellowCircle2,
+      textBlack,
+      yellowCircle1
+    );
+  } else {
+    changeColor(
+      yellowBgc,
+      yellowCircle1,
+      yellowCircle2,
+      textBlack,
+      yellowCircle1
+    );
+  }
 });
 
 green.addEventListener("click", function () {
   localStorage.setItem("selectedColor", "green");
-  changeColor(greenBgc, greenCircle2, greenCircle1, textBlack, greenCircle2);
+  if (page.style.backgroundColor == "black") {
+    changeColor("black", greenCircle2, greenCircle1, textBlack, greenCircle2);
+  } else {
+    changeColor(greenBgc, greenCircle2, greenCircle1, textBlack, greenCircle2);
+  }
 });
 
 blue.addEventListener("click", function () {
   localStorage.setItem("selectedColor", "blue");
-  changeColor(blueBgc, blueCircle2, blueCircle1, textBlack, blueCircle2);
+  if (page.style.backgroundColor == "black") {
+    changeColor("black", blueCircle2, blueCircle1, textBlack, blueCircle2);
+  } else {
+    changeColor(blueBgc, blueCircle2, blueCircle1, textBlack, blueCircle2);
+  }
 });
 
 purple.addEventListener("click", function () {
   localStorage.setItem("selectedColor", "purple");
-  changeColor(
-    purpleBgc,
-    purpleCircle2,
-    purpleCircle1,
-    textBlack,
-    purpleCircle2
-  );
+  if (page.style.backgroundColor == "black") {
+    changeColor(
+      "black",
+      purpleCircle2,
+      purpleCircle1,
+      textBlack,
+      purpleCircle2
+    );
+  } else {
+    changeColor(
+      purpleBgc,
+      purpleCircle2,
+      purpleCircle1,
+      textBlack,
+      purpleCircle2
+    );
+  }
 });
 
 pink.addEventListener("click", function () {
   localStorage.setItem("selectedColor", "pink");
-  changeColor(pinkBgc, pinkCircle2, pinkCircle1, textBlack, pinkCircle2);
+  if (page.style.backgroundColor == "black") {
+    changeColor("black", pinkCircle2, pinkCircle1, textBlack, pinkCircle2);
+  } else {
+    changeColor(pinkBgc, pinkCircle2, pinkCircle1, textBlack, pinkCircle2);
+  }
 });
 
 //  Save selected color
 
-// Lorsque la page est chargée
 document.addEventListener("DOMContentLoaded", function () {
-  // Vérifiez si une couleur est enregistrée dans le localStorage
   const selectedColor = localStorage.getItem("selectedColor");
   if (selectedColor) {
-    // Appliquez la couleur enregistrée
     switch (selectedColor) {
       case "red":
         page.style.backgroundColor = redBgc;
@@ -218,4 +241,63 @@ document.addEventListener("DOMContentLoaded", function () {
         break;
     }
   }
+});
+
+// Dark Theme
+
+moon.addEventListener("click", function () {
+  page.style.backgroundColor = "black";
+  titel1.style.color = textWhite;
+  titel2.style.color = textWhite;
+  colors.style.color = textWhite;
+  p2.style.color = textWhite;
+  p3.style.color = textWhite;
+  hwTitle.style.color = textWhite;
+  hwP1.style.color = textWhite;
+  hwP2.style.color = textWhite;
+  hwP3.style.color = textWhite;
+  hwP4.style.color = textWhite;
+  moon.style.display = "none";
+  sun.style.display = "block";
+});
+
+sun.addEventListener("click", function () {
+  const selectedColor = localStorage.getItem("selectedColor");
+  if (selectedColor) {
+    switch (selectedColor) {
+      case "red":
+        page.style.backgroundColor = redBgc;
+        break;
+      case "orange":
+        page.style.backgroundColor = orangeBgc;
+        break;
+      case "yellow":
+        page.style.backgroundColor = yellowBgc;
+        break;
+      case "green":
+        page.style.backgroundColor = greenBgc;
+        break;
+      case "blue":
+        page.style.backgroundColor = blueBgc;
+        break;
+      case "purple":
+        page.style.backgroundColor = purpleBgc;
+        break;
+      case "pink":
+        page.style.backgroundColor = pinkBgc;
+        break;
+    }
+  }
+  titel1.style.color = textBlack;
+  titel2.style.color = textBlack;
+  colors.style.color = textBlack;
+  p2.style.color = textBlack;
+  p3.style.color = textBlack;
+  hwTitle.style.color = textBlack;
+  hwP1.style.color = textBlack;
+  hwP2.style.color = textBlack;
+  hwP3.style.color = textBlack;
+  hwP4.style.color = textBlack;
+  moon.style.display = "block";
+  sun.style.display = "none";
 });

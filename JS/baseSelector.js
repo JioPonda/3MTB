@@ -37,8 +37,8 @@ export const startButton = document.querySelector("#start-button");
 
 // How it works section
 export const howItWorks = document.querySelector("#how-it-works");
-export const hwTitle = document.querySelector("hw-title");
-export const hwP1 = document.querySelector("hw-p1");
-export const hwP2 = document.querySelector("hw-p2");
-export const hwP3 = document.querySelector("hw-p3");
-export const hwP4 = document.querySelector("hw-p4");
+export const hwTitle = document.querySelector("#hw-title");
+export const hwP1 = document.querySelector("#hw-p1");
+export const hwP2 = document.querySelector("#hw-p2");
+export const hwP3 = document.querySelector("#hw-p3");
+export const hwP4 = document.querySelector("#hw-p4");

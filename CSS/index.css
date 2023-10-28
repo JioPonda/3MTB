@@ -187,4 +187,14 @@
 }
 #body main #how-it-works {
   display: none;
+  justify-content: center;
+  text-align: center;
+}
+#body main #how-it-works #hw-p1,
+#body main #how-it-works #hw-p2,
+#body main #how-it-works #hw-p3,
+#body main #how-it-works #hw-p4 {
+  font-size: 1.5em;
+  font-weight: 100;
+  color: black;
 }/*# sourceMappingURL=index.css.map */

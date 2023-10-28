@@ -143,7 +143,6 @@
   main {
     // START BREATHING
     #start-breathing {
-      // display: none;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -191,7 +190,16 @@
     // HOW IT WORKS
     #how-it-works {
       display: none;
-      // display: flex;
+      justify-content: center;
+      text-align: center;
+      #hw-p1,
+      #hw-p2,
+      #hw-p3,
+      #hw-p4 {
+        font-size: 1.5em;
+        font-weight: 100;
+        color: black;
+      }
     }
   }
 }
