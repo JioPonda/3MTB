@@ -63,12 +63,6 @@ colors.addEventListener("click", function () {
   }
 });
 
-// document.addEventListener("click", function (e) {
-//   if (!colors.contains(e.target) && !colorsSelector.contains(e.target)) {
-//     colorsSelector.style.display = "none";
-//   }
-// });
-
 // Color Change
 
 function changeColor(

@@ -1,6 +1,6 @@
 #body {
   font-family: Caprasimo;
-  background-color: #58afd8;
+  background-color: #78d4ff;
 }
 #body nav {
   display: flex;
@@ -60,7 +60,7 @@
 #body nav #colors-and-works #colors-selector #red {
   height: 1.5vw;
   width: 1.5vw;
-  background-color: #ce2121;
+  background-color: #ff5454;
   border-radius: 100px;
   margin: 1vw;
 }
@@ -70,7 +70,7 @@
 #body nav #colors-and-works #colors-selector #orange {
   height: 1.5vw;
   width: 1.5vw;
-  background-color: #ffa201;
+  background-color: #ff9224;
   border-radius: 100px;
   margin: 1vw;
 }
@@ -80,7 +80,7 @@
 #body nav #colors-and-works #colors-selector #yellow {
   height: 1.5vw;
   width: 1.5vw;
-  background-color: #cece21;
+  background-color: #e6e671;
   border-radius: 100px;
   margin: 1vw;
 }
@@ -90,7 +90,7 @@
 #body nav #colors-and-works #colors-selector #green {
   height: 1.5vw;
   width: 1.5vw;
-  background-color: #21ce46;
+  background-color: #82d37a;
   border-radius: 100px;
   margin: 1vw;
 }
@@ -100,7 +100,7 @@
 #body nav #colors-and-works #colors-selector #blue {
   height: 1.5vw;
   width: 1.5vw;
-  background-color: #2197ce;
+  background-color: #47c5ff;
   border-radius: 100px;
   margin: 1vw;
 }
@@ -110,7 +110,7 @@
 #body nav #colors-and-works #colors-selector #purple {
   height: 1.5vw;
   width: 1.5vw;
-  background-color: #9721ce;
+  background-color: #d478ff;
   border-radius: 100px;
   margin: 1vw;
 }
@@ -120,7 +120,7 @@
 #body nav #colors-and-works #colors-selector #pink {
   height: 1.5vw;
   width: 1.5vw;
-  background-color: #ce21a9;
+  background-color: #ff83e4;
   border-radius: 100px;
   margin: 1vw;
 }
@@ -165,14 +165,14 @@
   height: 18vh;
   width: 9vw;
   border-radius: 100px;
-  background-color: #115fc4;
+  background-color: #3b90ff;
 }
 #body main #start-breathing #all-circle #circle #start-button {
   display: block;
   color: #000000;
   position: absolute;
   font-size: 2.5em;
-  background-color: #115fc4;
+  background-color: #3b90ff;
   margin: 60px 0 0 0.8vw;
 }
 #body main #start-breathing #all-circle #circle:hover {
@@ -183,7 +183,7 @@
   height: 20vh;
   width: 10vw;
   border-radius: 100px;
-  background-color: #2197ce;
+  background-color: #47c5ff;
 }
 #body main #how-it-works {
   display: none;

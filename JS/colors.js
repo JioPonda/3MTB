@@ -1,37 +1,37 @@
 // RED
-export const redBgc = "#d85858";
-export const redCircle1 = "#ce2121";
-export const redCircle2 = "#c41111";
+export const redBgc = "#fb8383";
+export const redCircle1 = "#ff5454";
+export const redCircle2 = "#ff6868";
 
 // ORANGE
-export const orangeBgc = "#d89c58";
-export const orangeCircle1 = "#ffa201";
-export const orangeCircle2 = "#ee8b09";
+export const orangeBgc = "#ffbb7b";
+export const orangeCircle1 = "#ff9224";
+export const orangeCircle2 = "#ffa530";
 
 // YELLOW
-export const yellowBgc = "#d8d658";
-export const yellowCircle1 = "#cece21";
-export const yellowCircle2 = "#c4c411";
+export const yellowBgc = "#fffd9f";
+export const yellowCircle1 = "#e6e671";
+export const yellowCircle2 = "#ecec65";
 
 // GREEN
-export const greenBgc = "#58d88d";
-export const greenCircle1 = "#21ce46";
-export const greenCircle2 = "#11c420";
+export const greenBgc = "#a9fca5";
+export const greenCircle1 = "#82d37a";
+export const greenCircle2 = "#50bb50";
 
 // BLUE
-export const blueBgc = "#58afd8";
-export const blueCircle1 = "#2197ce";
-export const blueCircle2 = "#115fc4";
+export const blueBgc = "#78d4ff";
+export const blueCircle1 = "#47c5ff";
+export const blueCircle2 = "#3b90ff";
 
 // PURPLE
-export const purpleBgc = "#ab58d8";
-export const purpleCircle1 = "#9721ce";
-export const purpleCircle2 = "#7911c4";
+export const purpleBgc = "#da95ff";
+export const purpleCircle1 = "#d478ff";
+export const purpleCircle2 = "#ae3eff";
 
 // PINK
-export const pinkBgc = "#d858c5";
-export const pinkCircle1 = "#ce21a9";
-export const pinkCircle2 = "#c4119a";
+export const pinkBgc = "#ff9ef0";
+export const pinkCircle1 = "#ff83e4";
+export const pinkCircle2 = "#ff5eda";
 
 // DARK THEME
 export const darkBgc = "#000000";
