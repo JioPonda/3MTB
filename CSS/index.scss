@@ -6,6 +6,7 @@
   nav {
     display: flex;
     #switch-theme {
+      opacity: 1;
       .sun {
         display: none;
         position: absolute;
@@ -34,8 +35,9 @@
       flex-direction: row;
       text-align: end;
       color: $text-black;
-      margin-left: 80vw;
+      margin-left: 78vw;
       user-select: none;
+      opacity: 1;
       #colors {
         display: block;
         font-size: 1.5em;
@@ -146,23 +148,25 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      margin-top: 50px;
+      margin: 50px 0 0 0;
       color: $text-black;
       overflow: hidden;
-      h1 {
+      #titel1 {
         font-weight: 100;
         font-size: 5em;
+        opacity: 1;
       }
 
-      h2 {
+      #titel2 {
         font-weight: 100;
         font-size: 5em;
+        opacity: 1;
       }
       #all-circle {
         #circle {
           position: absolute;
-          margin: 60px 0 0 0.5vw;
-          height: 18vh;
+          margin: 0 0 0 0.5vw;
+          height: 19vh;
           width: 9vw;
           border-radius: 100px;
           background-color: $blue-circle2;
@@ -172,19 +176,22 @@
             position: absolute;
             font-size: 2.5em;
             background-color: $blue-circle2;
-            margin: 60px 0 0 0.8vw;
+            margin: 55px 0 0 0.3vw;
           }
         }
         #circle:hover {
           cursor: pointer;
         }
         #circle2 {
-          margin-top: 50px;
-          height: 20vh;
+          margin-top: -9px;
+          height: 21vh;
           width: 10vw;
           border-radius: 100px;
           background-color: $blue-circle1;
         }
+      }
+      .circle-transition {
+        transition: all 1s ease;
       }
     }
     // HOW IT WORKS
@@ -196,6 +203,7 @@
       #hw-p2,
       #hw-p3,
       #hw-p4 {
+        margin: 3.5em;
         font-size: 1.5em;
         font-weight: 100;
         color: black;

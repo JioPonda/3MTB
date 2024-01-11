@@ -2,10 +2,12 @@
 export const page = document.querySelector("#body");
 
 // Switch theme
+export const switchTheme = document.querySelector("#switch-theme");
 export const moon = document.querySelector(".moon");
 export const sun = document.querySelector(".sun");
 
 // Colors selection
+export const colorsAndWorks = document.querySelector("#colors-and-works");
 export const colors = document.querySelector("#colors");
 export const colorsSelector = document.querySelector("#colors-selector");
 

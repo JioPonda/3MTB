@@ -5,6 +5,9 @@
 #body nav {
   display: flex;
 }
+#body nav #switch-theme {
+  opacity: 1;
+}
 #body nav #switch-theme .sun {
   display: none;
   position: absolute;
@@ -36,10 +39,11 @@
   flex-direction: row;
   text-align: end;
   color: #000000;
-  margin-left: 80vw;
+  margin-left: 78vw;
   -webkit-user-select: none;
      -moz-user-select: none;
           user-select: none;
+  opacity: 1;
 }
 #body nav #colors-and-works #colors {
   display: block;
@@ -147,22 +151,24 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 50px;
+  margin: 50px 0 0 0;
   color: #000000;
   overflow: hidden;
 }
-#body main #start-breathing h1 {
+#body main #start-breathing #titel1 {
   font-weight: 100;
   font-size: 5em;
+  opacity: 1;
 }
-#body main #start-breathing h2 {
+#body main #start-breathing #titel2 {
   font-weight: 100;
   font-size: 5em;
+  opacity: 1;
 }
 #body main #start-breathing #all-circle #circle {
   position: absolute;
-  margin: 60px 0 0 0.5vw;
-  height: 18vh;
+  margin: 0 0 0 0.5vw;
+  height: 19vh;
   width: 9vw;
   border-radius: 100px;
   background-color: #3b90ff;
@@ -173,17 +179,20 @@
   position: absolute;
   font-size: 2.5em;
   background-color: #3b90ff;
-  margin: 60px 0 0 0.8vw;
+  margin: 55px 0 0 0.3vw;
 }
 #body main #start-breathing #all-circle #circle:hover {
   cursor: pointer;
 }
 #body main #start-breathing #all-circle #circle2 {
-  margin-top: 50px;
-  height: 20vh;
+  margin-top: -9px;
+  height: 21vh;
   width: 10vw;
   border-radius: 100px;
   background-color: #47c5ff;
+}
+#body main #start-breathing .circle-transition {
+  transition: all 1s ease;
 }
 #body main #how-it-works {
   display: none;
@@ -194,6 +203,7 @@
 #body main #how-it-works #hw-p2,
 #body main #how-it-works #hw-p3,
 #body main #how-it-works #hw-p4 {
+  margin: 3.5em;
   font-size: 1.5em;
   font-weight: 100;
   color: black;
